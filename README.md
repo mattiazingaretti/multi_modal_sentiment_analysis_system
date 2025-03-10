@@ -11,9 +11,9 @@ Combine both models to produce a final sentiment classification (positive, negat
 1. Dataset Preparation:
 Use a publicly available multi-modal dataset, such as the Twitter Sentiment AnalysisLinks to an external site. with Images dataset, which includes both text and corresponding image data.
 The dataset should include:
-- Text data: Tweets, captions, or any textual content.
-- Image data: Corresponding images, memes, or attached photos.
-- Sentiment labels: Each data entry should have a sentiment label—positive, negative, or neutral.
+    - Text data: Tweets, captions, or any textual content.
+    - Image data: Corresponding images, memes, or attached photos.
+    - Sentiment labels: Each data entry should have a sentiment label—positive, negative, or neutral.
 
 2. NLP Component (Text Analysis):
 Preprocess the text data by applying standard techniques such as tokenization, stopword removal, and lowercasing.
