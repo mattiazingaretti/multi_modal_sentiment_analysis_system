@@ -7,27 +7,6 @@ Preprocess both types of data.
 Build models to analyze sentiment in text (using NLP techniques).
 Analyze sentiment in images (using computer vision techniques).
 Combine both models to produce a final sentiment classification (positive, negative, neutral).
-## Tasks
-1. Dataset Preparation:
-Use a publicly available multi-modal dataset, such as the Twitter Sentiment AnalysisLinks to an external site. with Images dataset, which includes both text and corresponding image data.
-The dataset should include:
-    - Text data: Tweets, captions, or any textual content.
-    - Image data: Corresponding images, memes, or attached photos.
-    - Sentiment labels: Each data entry should have a sentiment label—positive, negative, or neutral.
-
-2. NLP Component (Text Analysis):
-Preprocess the text data by applying standard techniques such as tokenization, stopword removal, and lowercasing.
-Extract features from the text using popular word embeddings such as Word2Vec, GloVe, or BERT embeddings.
-Build a sentiment classification model for the text data using an NLP framework like Hugging Face, Scikit-learn, or TensorFlow.
-
-3. Computer Vision Component (Image Analysis):
-Preprocess the image data by resizing and normalizing the images for model input.
-Use a pre-trained Convolutional Neural Network (CNN) such as ResNet or VGG to extract features from the images.
-Build a sentiment classification model for the image data.
-
-4. Fusion and Final Classification:
-Combine the features from both the text and image models. You can use a concatenation layer or any other fusion technique to merge the feature vectors.
-Train a final model (such as a fully connected layer) to perform sentiment classification based on the combined features from both the text and image models.
 
 ## Data Used citation
 
@@ -134,4 +113,67 @@ Key Features:
 - Cross-entropy loss function
 - Adam optimizer with learning rate scheduler
 
+
+### Key Metrics Analysis (from last training_metrics.txt commit)
+
+
+#### Understanding the Metrics
+
+**Accuracy Metrics:**
+- **Precision:** Measures how many of the predicted positives are actually correct
+  - Formula: True Positives / (True Positives + False Positives)
+  - Our model: 0.96-0.99 across all classes
+
+- **Recall:** Measures how many of the actual positives were identified correctly
+  - Formula: True Positives / (True Positives + False Negatives)
+  - Our model: 0.94-0.99 across all classes
+
+- **F1-Score:** Harmonic mean of precision and recall
+  - Formula: 2 * (Precision * Recall) / (Precision + Recall)
+  - Our model: 0.96-0.97 across all classes
+
+**Loss Metrics:**
+- **Training Loss:** Measures model's error on training data
+  - Lower values indicate better learning
+  - Our model: Decreased from 1.08 to 0.45
+
+- **Validation Loss:** Measures model's error on unseen data
+  - Used to monitor overfitting
+  - Our model: Stabilized around 0.29
+
+**Support:** Number of samples for each class in the test set
+- Neutral: 1404 samples
+- Positive: 1323 samples
+- Negative: 1168 samples
+
+These metrics indicate a well-balanced, highly accurate model with consistent performance across all sentiment classes.
+
+#### Training Progress Analysis
+**Overall Performance Improvement:**
+- **Initial Accuracy:** 60% (Epoch 1)
+- **Final Accuracy:** 97% (Epoch 20)
+- Significant improvement in all metrics over the training period.
+
+**Loss Trends:**
+- **Training Loss:** Decreased from 1.0820 to 0.4506
+- **Validation Loss:** Stabilized around 0.2900
+- Consistent decrease in training loss indicates effective learning.
+
+#### Class-wise Performance (Final Epoch)
+**Key Observations:**
+- The model achieved balanced performance across all classes.
+- Major improvements occurred between epochs 10-15.
+- Best validation performance at epoch 20 with a 0.97 F1-score.
+- No signs of overfitting; training and validation metrics remain stable.
+
+#### Learning Phases
+- **Early Phase (Epochs 1-5):** Rapid improvement from 60% to 83% accuracy.
+- **Middle Phase (Epochs 6-15):** Steady improvement to 93% accuracy.
+- **Late Phase (Epochs 16-20):** Fine-tuning to reach 97% accuracy.
+
+### Some Examples from the Gradio Interface:
+
+![alt text](image.png)
+
+![alt text](image-1.png)
 
