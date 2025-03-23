@@ -37,7 +37,7 @@ class TrainingService:
 
     
     def train(self, num_epochs = 20, best_val_loss = float('inf')):
-
+        
         for epoch in range(num_epochs):
             train_loss = self._train_epoch(self.model, self.train_loader, self.criterion, self.optimizer)
             val_labels, val_preds , report = EvaluationService(self.model, self.val_loader,self.train_loader, self.device).evaluate_model()

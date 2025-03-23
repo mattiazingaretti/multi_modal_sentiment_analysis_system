@@ -12,6 +12,7 @@ pipeline = PipeLineBuilder()
 
 @app.post("/train_model")
 def train_model():
+  print("Starting Training model")
   pipeline.train_model()
   return {"message": "Model training started"}
 
@@ -32,7 +33,7 @@ def run_gradio(interface: gr.Interface):
   interface.launch(share=True, server_name="127.0.0.1", server_port=4200)
 
 def run_fastapi():
-  uvicorn.run(app, host="127.0.0.1", port=8080)
+  uvicorn.run(app, host=Constants.SERVER_HOST_NAME, port=Constants.SERVER_PORT)
 
 
 if __name__ == "__main__":
