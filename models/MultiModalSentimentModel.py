@@ -25,10 +25,11 @@ class MultimodalSentimentModel(nn.Module):
         self.fc3 = nn.Linear(512, num_classes)
 
     def forward(self, image, input_ids, attention_mask):
-        img_features = self.image_model(image).squeeze()
-        
+        img_features = self.image_model(image)
+        img_features = img_features.view(img_features.size(0), -1)  # Flatten to [batch_size, features]
+
         text_outputs = self.text_model(input_ids, attention_mask=attention_mask)
-        text_features = text_outputs.last_hidden_state[:, 0, :]
+        text_features = text_outputs.last_hidden_state[:, 0, :] # [batch_size, 768]
         
         combined = torch.cat([img_features, text_features], dim=1)
         

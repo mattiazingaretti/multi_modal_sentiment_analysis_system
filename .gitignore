@@ -1,3 +1,7 @@
 venv/
 __pycache__/
 data/
+.vscode/
+*.pyc
+*.zip
+.gradio/

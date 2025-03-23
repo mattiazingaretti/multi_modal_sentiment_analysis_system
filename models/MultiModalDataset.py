@@ -17,11 +17,16 @@ class MultiModalDataset(Dataset):
 
     def __getitem__(self, idx):
         row = self.df.iloc[idx]
-        label = row['label']
+        label = row['LABEL']
         text = row['cleaned_text']
-        img_path = os.path.join(self.img_dir, row['image_filename'])  # Ensure this column exists
+        img_path = os.path.join(self.img_dir, row['file_path'])
+        
+        if not img_path.endswith(".jpg"):
+            raise ValueError("Image file must be in .jpg format.")
         
         image = cv2.imread(img_path)
+        if image is None:
+            raise ValueError("Could not read image. Check the file path and format")
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         if self.transform:
             image = self.transform(image)

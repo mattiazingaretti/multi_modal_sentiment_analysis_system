@@ -33,7 +33,12 @@ class TextPreprocessorService:
         tokens = [word for word in tokens if word not in self.stop_words]
         return ' '.join(tokens)
     
-    def produce(self):
+    def produce(self, verbose=True):
         self.text_dataset['cleaned_text'] = self.text_dataset['Caption'].apply(self.preprocess_text)
+        self.text_dataset['file_path'] = self.text_dataset.apply(
+            lambda row: f"{row['LABEL']}/{row['File Name'].replace('.txt', '.jpg')}", 
+            axis=1
+        )
         self.text_dataset['LABEL'] = self.text_dataset['LABEL'].map({'neutral': 0, 'positive': 1, 'negative': 2})
-        return self.text_dataset    
+        print(self.text_dataset.info()) if verbose else None
+        return self.text_dataset

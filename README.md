@@ -29,3 +29,10 @@ Build a sentiment classification model for the image data.
 Combine the features from both the text and image models. You can use a concatenation layer or any other fusion technique to merge the feature vectors.
 Train a final model (such as a fully connected layer) to perform sentiment classification based on the combined features from both the text and image models.
 
+The Eriched MVSA dataset:
+
+[1] D. J. Mohammed and H. J. Aleqabie, "The Enrichment Of MVSA Twitter Data Via Caption-Generated Label Using Sentiment Analysis," 2022 Iraqi International Conference on Communication and Information Technologies (IICCIT), Basrah, Iraq, 2022, pp. 322-327, doi: 10.1109/IICCIT55816.2022.10010435.
+
+The Original Dataset (Which We Developed on):
+
+[2] T. Niu, S. A. Zhu, L. Pang and A. El Saddik, Sentiment Analysis on Multi-view Social Data, MultiMedia Modeling (MMM), pp: 15-27, Miami, 2016.
