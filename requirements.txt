@@ -1,0 +1,10 @@
+pandas
+openpyxl
+kagglehub
+scikit-learn
+torch
+torchvision
+opencv-python
+fastapi
+uvicorn
+gradio

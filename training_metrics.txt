@@ -1,0 +1,280 @@
+              precision    recall  f1-score   support
+
+     Neutral       0.77      0.38      0.50      1404
+    Positive       0.53      0.87      0.66      1323
+    Negative       0.63      0.56      0.59      1168
+
+    accuracy                           0.60      3895
+   macro avg       0.64      0.60      0.59      3895
+weighted avg       0.65      0.60      0.58      3895
+
+Epoch 1/20
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+
+     Neutral       0.72      0.55      0.62      1404
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+
+     Neutral       0.72      0.55      0.62      1404
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+
+     Neutral       0.72      0.55      0.62      1404
+Train Loss: 1.0820 | Val Loss: 30188.0000
+              precision    recall  f1-score   support
+
+              precision    recall  f1-score   support
+
+
+     Neutral       0.72      0.55      0.62      1404
+    Positive       0.79      0.67      0.73      1323
+    Negative       0.56      0.81      0.66      1168
+
+    accuracy                           0.67      3895
+   macro avg       0.69      0.68      0.67      3895
+weighted avg       0.69      0.67      0.67      3895
+
+Epoch 2/20
+Train Loss: 0.9276 | Val Loss: 30181.3125
+              precision    recall  f1-score   support
+
+     Neutral       0.87      0.43      0.58      1404
+    Positive       0.70      0.88      0.78      1323
+    Negative       0.64      0.84      0.72      1168
+
+    accuracy                           0.70      3895
+   macro avg       0.73      0.72      0.69      3895
+weighted avg       0.74      0.70      0.69      3895
+
+Epoch 3/20
+Train Loss: 0.8691 | Val Loss: 29948.8086
+              precision    recall  f1-score   support
+
+     Neutral       0.76      0.73      0.75      1404
+    Positive       0.77      0.87      0.82      1323
+    Negative       0.79      0.71      0.75      1168
+
+    accuracy                           0.77      3895
+   macro avg       0.77      0.77      0.77      3895
+weighted avg       0.77      0.77      0.77      3895
+
+Epoch 4/20
+Train Loss: 0.8256 | Val Loss: 29860.1738
+              precision    recall  f1-score   support
+
+     Neutral       0.81      0.73      0.76      1404
+    Positive       0.81      0.86      0.84      1323
+    Negative       0.76      0.80      0.78      1168
+
+    accuracy                           0.79      3895
+   macro avg       0.79      0.80      0.79      3895
+weighted avg       0.79      0.79      0.79      3895
+
+Epoch 5/20
+Train Loss: 0.7875 | Val Loss: 29752.3828
+              precision    recall  f1-score   support
+
+     Neutral       0.85      0.77      0.81      1404
+    Positive       0.85      0.88      0.86      1323
+    Negative       0.79      0.85      0.82      1168
+
+    accuracy                           0.83      3895
+   macro avg       0.83      0.83      0.83      3895
+weighted avg       0.83      0.83      0.83      3895
+
+Epoch 6/20
+Train Loss: 0.7554 | Val Loss: 29582.7266
+              precision    recall  f1-score   support
+
+     Neutral       0.82      0.81      0.81      1404
+    Positive       0.88      0.83      0.86      1323
+    Negative       0.79      0.84      0.81      1168
+
+    accuracy                           0.83      3895
+   macro avg       0.83      0.83      0.83      3895
+weighted avg       0.83      0.83      0.83      3895
+
+Epoch 7/20
+Train Loss: 0.7121 | Val Loss: 29606.1953
+              precision    recall  f1-score   support
+
+     Neutral       0.84      0.86      0.85      1404
+    Positive       0.90      0.85      0.88      1323
+    Negative       0.83      0.86      0.85      1168
+
+    accuracy                           0.86      3895
+   macro avg       0.86      0.86      0.86      3895
+weighted avg       0.86      0.86      0.86      3895
+
+Epoch 8/20
+Train Loss: 0.6920 | Val Loss: 29474.0078
+              precision    recall  f1-score   support
+
+     Neutral       0.83      0.88      0.86      1404
+    Positive       0.87      0.91      0.89      1323
+    Negative       0.91      0.79      0.85      1168
+
+    accuracy                           0.86      3895
+   macro avg       0.87      0.86      0.86      3895
+weighted avg       0.87      0.86      0.86      3895
+
+Epoch 9/20
+Train Loss: 0.6742 | Val Loss: 29474.5430
+              precision    recall  f1-score   support
+
+     Neutral       0.93      0.78      0.85      1404
+    Positive       0.89      0.92      0.90      1323
+    Negative       0.81      0.93      0.86      1168
+
+    accuracy                           0.87      3895
+   macro avg       0.88      0.88      0.87      3895
+weighted avg       0.88      0.87      0.87      3895
+
+Epoch 10/20
+Train Loss: 0.6642 | Val Loss: 29372.5391
+              precision    recall  f1-score   support
+
+     Neutral       0.77      0.97      0.86      1404
+    Positive       0.95      0.90      0.92      1323
+    Negative       0.95      0.70      0.81      1168
+
+    accuracy                           0.87      3895
+   macro avg       0.89      0.86      0.86      3895
+weighted avg       0.88      0.87      0.86      3895
+
+Epoch 11/20
+Train Loss: 0.6191 | Val Loss: 29633.6523
+              precision    recall  f1-score   support
+
+     Neutral       0.94      0.87      0.90      1404
+    Positive       0.81      0.97      0.89      1323
+    Negative       0.92      0.81      0.86      1168
+
+    accuracy                           0.89      3895
+   macro avg       0.89      0.88      0.88      3895
+weighted avg       0.89      0.89      0.88      3895
+
+Epoch 12/20
+Train Loss: 0.6031 | Val Loss: 29269.8945
+              precision    recall  f1-score   support
+
+     Neutral       0.95      0.89      0.92      1404
+    Positive       0.89      0.97      0.93      1323
+    Negative       0.93      0.91      0.92      1168
+
+    accuracy                           0.92      3895
+   macro avg       0.92      0.92      0.92      3895
+weighted avg       0.93      0.92      0.92      3895
+
+Epoch 13/20
+Train Loss: 0.5576 | Val Loss: 29153.5469
+              precision    recall  f1-score   support
+
+     Neutral       0.97      0.88      0.92      1404
+    Positive       0.94      0.96      0.95      1323
+    Negative       0.88      0.96      0.92      1168
+
+    accuracy                           0.93      3895
+   macro avg       0.93      0.93      0.93      3895
+weighted avg       0.93      0.93      0.93      3895
+
+Epoch 14/20
+Train Loss: 0.5465 | Val Loss: 29144.9473
+              precision    recall  f1-score   support
+
+     Neutral       0.98      0.86      0.92      1404
+    Positive       0.90      0.98      0.94      1323
+    Negative       0.91      0.95      0.93      1168
+
+    accuracy                           0.93      3895
+   macro avg       0.93      0.93      0.93      3895
+weighted avg       0.93      0.93      0.93      3895
+
+Epoch 15/20
+Train Loss: 0.5420 | Val Loss: 29118.1348
+              precision    recall  f1-score   support
+
+     Neutral       0.97      0.90      0.94      1404
+    Positive       0.96      0.97      0.96      1323
+    Negative       0.90      0.96      0.93      1168
+
+    accuracy                           0.94      3895
+   macro avg       0.94      0.95      0.94      3895
+weighted avg       0.95      0.94      0.94      3895
+
+Epoch 16/20
+Train Loss: 0.5227 | Val Loss: 29102.8633
+              precision    recall  f1-score   support
+
+     Neutral       0.96      0.94      0.95      1404
+    Positive       0.93      0.99      0.96      1323
+    Negative       0.97      0.92      0.95      1168
+
+    accuracy                           0.95      3895
+   macro avg       0.96      0.95      0.95      3895
+weighted avg       0.95      0.95      0.95      3895
+
+Epoch 17/20
+Train Loss: 0.4769 | Val Loss: 29047.9180
+              precision    recall  f1-score   support
+
+     Neutral       0.96      0.91      0.94      1404
+    Positive       0.91      0.99      0.95      1323
+    Negative       0.96      0.92      0.94      1168
+
+    accuracy                           0.94      3895
+   macro avg       0.94      0.94      0.94      3895
+weighted avg       0.94      0.94      0.94      3895
+
+Epoch 18/20
+Train Loss: 0.4784 | Val Loss: 29089.6445
+              precision    recall  f1-score   support
+     Neutral       0.99      0.91      0.94      1404
+    Positive       0.97      0.97      0.97      1323
+    Negative       0.90      0.99      0.94      1168
+
+    accuracy                           0.95      3895
+   macro avg       0.95      0.95      0.95      3895
+weighted avg       0.95      0.95      0.95      3895
+
+Epoch 19/20
+Train Loss: 0.4520 | Val Loss: 29053.1973
+              precision    recall  f1-score   support
+
+     Neutral       0.99      0.94      0.97      1404
+    Positive       0.97      0.98      0.98      1323
+    Negative       0.94      0.99      0.96      1168
+
+    accuracy                           0.97      3895
+   macro avg       0.97      0.97      0.97      3895
+weighted avg       0.97      0.97      0.97      3895
+
+Epoch 20/20
+Train Loss: 0.4602 | Val Loss: 28974.3066Epoch 1/20
+              precision    recall  f1-score   support
+
+     Neutral       0.99      0.94      0.96      1404
+    Positive       0.96      0.98      0.97      1323
+    Negative       0.95      0.99      0.97      1168
+
+    accuracy                           0.97      3895
+   macro avg       0.97      0.97      0.97      3895
+weighted avg       0.97      0.97      0.97      3895
+Train Loss: 0.4506 | Val Loss: 28961.8965
