@@ -24,7 +24,7 @@ def test_model(request: TestModelRequestDTO):
 def gradio_test_model(text, image):
   request = TestModelRequestDTO(text=text, image_path=image.name)
   response = test_model(request)
-  return response["message"]
+  return response
 
 
 # there is no place like home :)
@@ -39,7 +39,7 @@ if __name__ == "__main__":
   interface = gr.Interface(
     fn=gradio_test_model,
     inputs=["text", "file"],
-    outputs="text",
+    outputs="json",
     title="Multi-Modal Sentiment Analysis",
     description="Upload an image and enter text to test the sentiment analysis model."
   )
