@@ -267,4 +267,14 @@ Train Loss: 0.4520 | Val Loss: 29053.1973
 weighted avg       0.97      0.97      0.97      3895
 
 Epoch 20/20
-Train Loss: 0.4602 | Val Loss: 28974.3066
+Train Loss: 0.4602 | Val Loss: 28974.3066Epoch 1/20
+              precision    recall  f1-score   support
+
+     Neutral       0.99      0.94      0.96      1404
+    Positive       0.96      0.98      0.97      1323
+    Negative       0.95      0.99      0.97      1168
+
+    accuracy                           0.97      3895
+   macro avg       0.97      0.97      0.97      3895
+weighted avg       0.97      0.97      0.97      3895
+Train Loss: 0.4506 | Val Loss: 28961.8965
