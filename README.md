@@ -173,7 +173,6 @@ These metrics indicate a well-balanced, highly accurate model with consistent pe
 
 ### Some Examples from the Gradio Interface:
 
-![alt text](image.png)
+![alt text](static/image.png)
 
-![alt text](image-1.png)
-
+![alt text](static/image-1.png)
